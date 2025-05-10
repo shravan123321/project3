@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PW website clone</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+
+
+
+
+
+    <!-- header line in the pw -->
+
+    <nav class="navebar">
+        <div class="three_line">
+            <div class="container" onclick="myFunction(this)">
+             <div class="bar1"></div>
+             <div class="bar2"></div>
+              <div class="bar3"></div>
+             </div>
+               <script>
+                function myFunction(x) {
+                  x.classList.toggle("change");
+                }
+                </script>
+        </div>
+         
+        <div class="logo_img">
+            <img src="image/pwlogo.jpg" alt="PW_LOGO">
+        </div>
+        
+        <div class="navancer">
+            <ul id="space" class="navancer_data">
+                <li>
+                    <a href="#HOME">Home</a>
+                </li>
+                <li>
+                    <a href="#VIDYAPEETH">Vidyapeeth</a>
+                </li>
+                <li>
+                    <a href="#UPSKILLING">Upskilling-job Assistance</a>
+                </li>
+                <li>
+                    <a href="#PW BOOKS">pw store(Books)</a>
+                </li>
+                <li>
+                    <a href="#REAl Test">Real-Test</a>
+                </li>
+            </ul>
+        </div>
+        <div class="login">
+            <a href="#logine/register" class="login-reg" >Logine/Register</a>
+        </div>
+    </nav> 
+    
+
+   
+  <!-- first layer in html -->
+
+
+
+
+
+  <div class="section1">
+    <div class="section2">
+       <div class="section3">
+             <!-- image first -->
+
+             <div class="slide1">
+                <img src="image/photo1.jpg" alt="first image">
+             </div>
+            
+                <!-- images second -->
+
+                <div class="slide1">
+                  <img id="photo2" src="image/photo2.webp" alt="second image">
+                </div>
+                
+                <!-- images third -->
+
+                <div class="slide1">
+                 <img src="image/photo13.png" alt="third image">
+               </div>
+
+               <!-- image four -->
+
+               <div class="slide1">
+                 <img src="image/photo4.webp" alt="four image">
+               </div>
+
+               <!-- image five -->
+
+               <div class="slide1">
+                 <img src="image/photo5.jpg" alt="five image">
+               </div>
+
+               <!-- image six -->
+
+               <!-- <div class="slide1">
+                 <img src="image/photo6.jpg" alt="six image">
+               </div> -->
+
+               <!-- image seven -->
+
+               <div class="slide1">
+                 <img src="image/photo7.webp" alt="seven image">
+               </div>
+
+                <!-- image eight -->
+
+                <div class="slide1">
+                 <img src="image/photo8.webp" alt=" eight image">
+               </div>
+
+               <!-- nine image -->
+
+               <div class="slide1">
+                 <img src="image/photo9.webp" alt="nine image">
+               </div>
+
+               <!-- ten image -->
+
+               <div class="slide1">
+                 <img src="image/photo10.webp" alt="ten image">
+               </div>
+
+               <!-- eleven image -->
+
+               <div class="slide1">
+                 <img src="image/photo11.webp" alt="eleven image">
+               </div>
+
+               <!-- image twelven -->
+
+               <div class="slide1">
+                 <img src="image/photo12.webp" alt="twelven">
+               </div>
+       </div>
+
+       <button id="size_button" class="prev" onclick="num(-1)">&#10094</button>
+       <button id="size_button" class="next" onclick="num(-1)">&#10095</button>
+    </div>
+ </div>
+ <script>
+   let currentSlide1 = 0;
+   const section3 = document.querySelectorAll('.slide1');
+   
+   function num(n) {
+   currentSlide1 += n;
+   if (currentSlide1 >=section3.length) {
+       currentSlide1 = 0;
+   } else if (currentSlide1 < 0) {
+       currentSlide1 =section3.length - 1;
+   }
+   document.querySelector('.section3').style.transform = `translateX(-${currentSlide1 * 100}%)`;
+   }
+   setInterval(() => {
+     num(1);
+   }, 3000);
+   
+   </script>     
+
+
+
+
+
+  <!-- second html page -->
+
+
+
+
+   
+<section class="third-layer">
+  <div class="header">
+       <div class="header1">
+           <h1 class="ab">
+               Bharat’s
+               <span class="b">Biggest & Most trusted </span>
+               Educational Platform
+           </h1>
+              <p class="c">Unlock your potential by signing up with Physics Wallah-The most affordable learning solution</p>
+              <button class="button_header1">
+                 <a href="#logine/register">Get Started</a>
+              </button>
+            </div>
+            <div class="header2">
+                <img src="image/background pic.webp" alt="header hero">
+             </div>
+   </div>
+</section>
+
+
+
+
+      
+  
+   <!-- third html page  -->
+
+
+
+   <section class="features">
+    <!-- live class -->
+        <div class="feature">
+            <div class="icon live-icon">
+                <!-- <img src="https://cdn-icons-png.freepik.com/256/18429/18429699.png?semt=ais_hybrid" alt="live-icon"> -->
+            </div>
+            <h2>Daily Live</h2>
+            <p>Interactive classes</p> 
+        </div> 
+
+   <!-- 10 Million + -->
+         <div class="feature">
+            <div class="icon subscript">
+                <!-- <img src="https://cdn-icons-png.freepik.com/256/13972/13972644.png?ga=GA1.1.1139119701.1730656879&semt=ais_hybrid" alt=""> -->
+            </div>
+            <h2>10 Million + </h2>
+            <p>Tests, sample papers & notes</p>
+        </div> 
+
+
+   <!-- Doubt solved quistion      -->
+        <div class="feature">
+             <div class="icon doubt_solved">
+                <!-- <img src="https://cdn-icons-png.freepik.com/256/1283/1283201.png?ga=GA1.1.1139119701.1730656879&semt=ais_hybrid" alt=""> -->
+             </div>
+            <h2>24 x 7</h2>
+            <p>Doubt solving sessions</p>
+        </div>
+     
+       <!-- Content offline   -->
+       <div class="feature">
+            <div class="icon content_us">
+                <!-- <img src="https://img.freepik.com/premium-vector/vector-design-callcentered-icon-style_822882-92128.jpg?ga=GA1.1.1139119701.1730656879&semt=ais_hybrid" alt=""> -->
+            </div>
+            <h2>100 +</h2>
+            <p>Offline Centres</p>
+         </div> 
+   </section>
+   
+
+
+
+   <!-- four html page -->
+
+
+
+
+
+
+   <section class="Exam_categary">
+    <div class="exam_section">
+       <h2 id="header_section">Exam Categories</h2>
+       <p id="paragraph_section">PW is preparing students for 18 exam categories. Scroll down to find the one you are preparing for.</p>
+    </div>
+
+ <!-- CARD NUMBER 1 -->
+
+ <div class="card1">
+       <h3>NEET</h3>
+    <div class="card_content">
+       <div class="card_button1">
+          <a href="#class 11">Class 11</a>
+          <a href="#class 12">Class 12</a>
+          <a href="#Dropper">Dropper</a>
+       </div>
+           <div class="card_button2">
+               <img src="image/neet_img.webp" alt="NEET_image">
+          </div>
+    </div>
+          <button class="example">Explore Category →</button>
+ </div>
+
+ 
+ <!-- CARD NUMBER 2 -->
+
+  <div class="card1">
+        <h3>IIT JEE</h3>
+    <div class="card_content">
+      <div class="card_button1">
+        <a href="#class 11">Class 11</a>
+        <a href="#class 12">Class 12</a>
+        <a href="#Dropper">Dropper</a>
+      </div>
+      <div class="card_button2">
+        <img src="image/IIT_img.webp" alt="NEET_image">
+      </div>
+    </div>
+         <button class="example">Explore Category →</button>
+ </div> 
+
+ 
+ <!-- CARD NUMBER 3 -->
+
+  <div class="card1">
+       <h3>School Preparation</h3>
+    <div class="card_content"> 
+      <div class="card_button1">
+          <a href="#class 6">Class 6</a>
+          <a href="#class 7">Class 7</a>
+          <a href="#class 8">Class 8</a>
+           <a href="#More">more ↶</a>
+      </div>
+    <div class="card_button2">
+        <img src="image/School_img.webp" alt="NEET_image">
+    </div>
+    </div>
+       <button class="example">Explore Category →</button>
+ </div> 
+
+
+ 
+ <!-- CARD NUMBER 4 -->
+
+ <div class="card1">
+      <h3>UPSE</h3>
+    <div class="card_content">
+      <div class="card_button1">
+          <a href="#class 11">Class 11</a>
+          <a href="#class 12">Class 12</a>
+          <a href="#Dropper">Dropper</a>
+       </div>
+     <div class="card_button2">
+             <img src="image/upse_img.webp" alt="NEET_image">
+      </div>
+    </div>
+         <button class="example">Explore Category →</button>
+  </div> 
+
+
+ 
+ <!-- CARD NUMBER 5 -->
+
+   <div class="card1">
+  <h3>Govt Job Exams</h3>
+  <div class="card_content">
+       <div class="card_button1">
+          <a href="#SSC">SSC</a>
+          <a href="#Banking">Banking</a>
+          <a href="#Teaching">Teaching</a>
+          <a href="#Judiciary">Judiciary</a>
+        </div>
+    <div class="card_button2">
+          <img src="image/Govt_img.webp" alt="Govt-img">
+    </div>
+  </div>
+       <button class="example">Explore Category →</button>
+  </div> 
+
+  
+ <!-- CARD NUMBER 6 -->
+
+  <div class="card1">
+        <h3>Defence</h3>
+     <div class="card_content">
+      <div class="card_button1">
+          <a href="#NDA">NDA</a>
+          <a href="#CDS">CDS</a>
+           <a href="#Afcat">AFCAT</a>
+           <a href="#Agniveer">Agniveer</a>
+       </div>
+      <div class="card_button2">
+             <img src="image/Defeence_img.webp" alt="NEET_image">
+       </div>
+    </div>
+          <button class="example">Explore Category →</button>
+  </div>
+
+  
+</section>
+
+   
+
+
+
+
+
+  <!-- five page in html -->
+ 
+
+
+  <section>
+    <div class="content">
+        <div class="video_section">
+            <video  autoplay muted loop class="">
+                <source src="image/library_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <!-- Top Section -->
+        
+                <div class="tax">
+                    <h2>Explore Tech-Enabled Offline Vidyapeeth Centres</h2>
+                    <p>Creating new benchmarks in learning experiences</p>
+                </div>
+            
+
+            <!-- Button Section -->
+            <div class="button">
+                <div class="tax_section">
+                    <h3>Find Vidyapeeth Centre in your city</h3>
+                    <p>Available in 
+                      <span class="cities">105</span> cities</p>
+                </div>
+
+                <!-- Locations -->
+                 
+                <div class="box">
+
+                <div class="box_section">
+                    <div class="left_image">
+                        <img src="image/patna_image.jpg" alt="PATNA_center" width="20px" height="20px">
+                    </div>
+                    <div class="right_text">
+                        <h2>PATNA</h2>
+                    </div>
+                </div>
+
+                <div class="box_section">
+                    <div class="left_image">
+                        <img src="image/jaipur_images.jpg" alt="Jaipur_center" width="20px" height="20px">
+                    </div>
+                    <div class="right_text">
+                        <h2>JAIPUR</h2>
+                    </div>
+                </div>
+
+                <div class="box_section">
+                    <div class="left_image">
+                        <img src="image/noida_image.avif" alt="Noida_center" width="20px" height="20px">
+                    </div>
+                    <div class="right_text">
+                        <h2>NOIDA</h2>
+                    </div>
+                </div>
+
+                <div class="box_section">
+                    <div class="left_image">
+                        <img src="image/ahmedabad_image.jpg" alt="Ahmedabad_center" width="20px" height="20px">
+                    </div>
+                    <div class="right_text">
+                        <h2>AHMEDABAD</h2>
+                    </div>
+                </div>
+
+                <div class="box_section">
+                    <div class="left_image">
+                        <img src="image/kolkata_image.jpg" alt="Kolkata_center" width="20px" height="20px">
+                    </div>
+                    <div class="right_text">
+                        <h2>KOLKATA</h2>
+                    </div>
+                </div>
+
+                <div class="box_section">
+                    <div class="left_image">
+                        <img src="image/delhi_image.jpg" alt="Delhi_center" width="20px" height="20px">
+                    </div>
+                    <div class="right_text">
+                        <h2>DELHI</h2>
+                    </div>
+                </div>
+
+                <div class="box_section">
+                    <div class="left_image">
+                        <img src="image/kota_img.png" alt="Kota_center" width="20px" height="20px">
+                    </div>
+                    <div class="right_text">
+                        <h2>KOTA</h2>
+                    </div>
+                </div>
+                </div>
+                <button class="view-more">View More</button>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+ 
+  
+
+<!-- sex page in html -->
+
+
+
+
+
+
+<section class="cards-container">
+
+    <div class="card_hd">  
+        <h1>A Platform Trusted by Students Worldwide</h1>
+        <p>Don't Just Take Our Word for It. Delve into the Numbers and Witness the Excellence for Yourself!</p>
+    
+    </div>
+
+  <div class="platform-box">
+    <div class="card">
+        <div class="card-content">
+            <h3><span class="student">15</span>Million<span class="student">+</span></h3>
+            <p>Happy students</p>
+        </div>
+        <div class="card-hover">
+            <img src="image/shravan_student1.png" alt="Image 1" width="100%" height="100%">
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-content">
+            <h3><span class="student">24000+</span></h3>
+            <p>Mock tests</p>
+        </div>
+        <div class="card-hover">
+            <img src="image/study_books.jpg" alt="Image 2">
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-content">
+            <h3><span class="student">14000+</span></h3>
+            <p>Video Lectures</p>
+        </div>
+        <div class="card-hover">
+            <img src="image/video_lecture_image.jpg" alt="Image 3">
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-content">
+            <h3><span class="student">80000+</span></h3>
+            <p>Practice Papers</p>
+        </div>
+        <div class="card-hover">
+            <img src="image/practical_paper.avif" alt="Image 4">
+        </div>
+    </div>
+  </div>   
+</section>
+
+
+   
+
+
+   <!-- seven page in html -->
+
+
+   <!-- footer Section  -->
+
+
+   <div id="footer-Head">
+    <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-section about">
+            <h2 id="PW-HEAD">Physics Wallah</h2>
+            <p id="PW-PARA">We understand that every student has different needs and capabilities, which is why we create such a wonderful and unique curriculum that is the best fit for every student.</p>
+            <div class="app-links">
+              <a href="#"><img src="image/google_image.webp" alt="Get it on Google Play"></a>
+              <a href="#"><img src="image/appstorage.webp" alt="Download on the App Store"></a>
+            </div>
+          </div>
+          <div class="footer-section links">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Updates</a></li>
+              <li><a href="#">Blogs</a></li>
+              <li><a href="#">Account Deletion</a></li>
+            </ul>
+          </div>
+          <div class="footer-section links">
+            <h3>Our Centres</h3>
+            <ul>
+              <li><a href="#">New Delhi</a></li>
+              <li><a href="#">Patna</a></li>
+              <li><a href="#">Kota</a></li>
+              <li><a href="#">Noida</a></li>
+              <li><a href="#">Dhanbad</a></li>
+              <li><a href="#">Varanasi</a></li>
+              <li><a href="#">View All</a></li>
+            </ul>
+          </div>
+          <div class="footer-section links">
+            <h3>Popular Exams</h3>
+            <ul>
+              <li><a href="#">IIT JEE</a></li>
+              <li><a href="#">NEET</a></li>
+              <li><a href="#">GATE</a></li>
+              <li><a href="#">NDA</a></li>
+              <li><a href="#">UPSC</a></li>
+              <li><a href="#">School Prep</a></li>
+            </ul>
+          </div>
+          <div class="footer-section links">
+            <h3>Connect With Us</h3>
+            <ul>
+              <li><a href="#">Email Us</a></li>
+              <li><a href="#">Talk to a Counselor</a></li>
+            </ul>
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">PW Prerna</a></li>
+              <li><a href="#">PW SIP</a></li>
+              <li><a href="#">PW Gurukulam</a></li>
+            </ul>
+          </div>
+          <div class="footer-section links">
+            <h3>Our Products</h3>
+            <ul>
+              <li><a href="#">PW App Learning</a></li>
+              <li><a href="#">PW Offline Payments (Fin-Z)</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="social-icons">
+            <a href="#"><img src="image/facebook_image.png" alt="Facebook"></a>
+            <a href="#"><img src="image/instagram_image.jpg" alt="Instagram"></a>
+            <a href="#"><img src="image/linkedin_image.png" alt="LinkedIn"></a>
+            <a href="#"><img src="image/twitter_image1.png" alt="Twitter"></a>
+            <a href="#"><img src="image/Teligramfooter.png" alt="Telegram"></a>
+          </div>
+        </div>
+      </footer>
+    
+    </div>
+
+
+   
+
+
+
+
+
+
+</body>
+</html>
